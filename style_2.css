@@ -34,24 +34,29 @@ body{
    border-radius: 8px;
    color: white;
 }
+#Watch-btn:hover{
+   background-color: white;
+   transform: scale(1.1);
+   color: black;
+   border: 3px solid #04562e;
+   border-radius: 8px;
+   font-weight: 700;
+}
+.btn-all
+{
+    display: none;
+}
+.card_section
+{
+    display: flex;
+}
 .part 
 {
    position: relative;
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   margin-top: 5%;
-   margin-left: 35%;
-   margin-right: 35%;
-   justify-content: center;
-}
-.card_part 
-{
-   position: relative;
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   margin-left: 52%;
-   margin-right: 30%;
-   justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 4%;
+  justify-content: center;
 }
 .card 
 {
@@ -59,25 +64,24 @@ body{
    width: 312px;
    margin: 20px 10px;
    box-shadow: 8px 8px 8px 8px rgba(241, 236, 236, 0.767);
-   border: 2px solid gray;
+   border: 2px solid rgba(128, 128, 128, 0.371);
    border-radius: 10px;
    text-align: center;
 }
-#card-1{
-   background: linear-gradient(to left, #093647 0%, black 100%);
-   height: 312px;
-   width: 312px;
-}
-.btn{
-   margin-top: 5%;
-   margin-bottom: 5%;
-   margin-right: 8%;
+.btn-card 
+{
+  background: linear-gradient(to left, #093647 0%, black 100%);
+  height: 312px;
+  width: 312px;
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-left: 7%;
 }
 .btn-next{
    height: 64px;
    width: 252px;
-   margin-top: 7%;
-   margin-left: 9%;
+   margin-top: 9%;
+   margin-left: 10%;
    background-color: white;
    border-radius: 10px;
    font-weight: 700;
@@ -95,11 +99,21 @@ p{
    background-color: #04562e;
    color: white;
 }
+#btn-all:hover
+{
+    background-color: #04562e;
+    color: white;
+}
+#btn-blog:hover
+{
+  background-color: #04562e;
+  color: white;
+}
 
 footer{
    background-color: black;
    margin-top: 5%;
-   padding: 5%;
+   padding-top: 5%;
    color: white;
    text-align: center;
 }
@@ -112,4 +126,155 @@ footer{
    font-weight: 700;
    display: flex;
    justify-content: space-around;
+}
+.icons 
+{
+    font-size: 20px;
+    color: rgb(146, 141, 141);
+    cursor: pointer;
+    margin-top: 3%;
+    padding-left: 5px;
+}
+.fab 
+{
+    margin-left: 15px;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+   #header_banner 
+   {
+       display: grid;
+       background: linear-gradient(to right, #093647 0%, black 100%);
+       border-radius: 15px;
+       margin-top: 3%;
+       margin-left: 7%;
+       margin-right: 7%;
+   }
+   #div_2 img 
+   {
+     height: 95%;
+     margin-top: 4.5%;
+   }
+   .card_section
+   {
+       display: grid;
+   }
+   .part 
+   {
+       position: relative;
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+       margin-top: 5%;
+       margin-left: 35%;
+       margin-right: 35%;
+       justify-content: center;
+     }
+   .btn-card 
+   {
+       background: transparent;
+      
+   }
+   .btn-next 
+   {
+       height: 64px;
+       width: 252px;
+       margin-top: 7%;
+       margin-left: 9%;
+       background-color: white;
+       border: 2px solid rgba(128, 128, 128, 0.659);
+       border-radius: 10px;
+       font-weight: 700;
+   }
+   .btn-all
+   {
+       display: none;
+   }
+   .footer-t 
+   {
+       margin-top: 2%;
+       color: rgb(146, 141, 141);
+       font-weight: 700;
+       display: grid;
+       justify-content: space-around;
+   }
+   }
+   
+   @media only screen and (min-width: 600px) and (max-width: 1023px) 
+   {
+   #header_banner 
+   {
+       display: flex;
+       background: linear-gradient(to right, #093647 0%, black 100%);
+       border-radius: 15px;
+       margin-top: 3%;
+       margin-left: 7%;
+       margin-right: 7%;
+   }
+   #div_2 img 
+   {
+     height: 85%;
+     margin-top: 19%;
+   }
+   .btn-card 
+   {
+       background: transparent;
+   }
+   .card_section
+   {
+       display: grid;
+   }
+   .part 
+   {
+       position: relative;
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       margin-top: -20%;
+       margin-left: 20%;
+       margin-right: 20%;
+       justify-content: center;
+   }
+   .btn 
+   {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       grid-gap: 10px;
+       width: 100%;
+       margin-top: 5%;
+       margin-bottom: 5%;
+   
+   }
+   .btn-next 
+   {
+       height: 64px;
+       width: 200px;
+       margin-top: 7%;
+       margin-left: 9%; 
+       background-color: white;
+       border: 2px solid rgba(128, 128, 128, 0.659);
+       border-radius: 10px;
+       font-weight: 700;
+   }
+   
+   .btn-all
+   {
+       display: block;
+       padding-left: 10%;
+       padding-right: 10%;
+       padding-top: 2%;
+       padding-bottom: 2%;
+       margin-top: 5%;
+       margin-left: 40%;
+       background-color: #04562e;
+       color: white;
+       border-radius: 10px;
+       border: none;
+   }
+   .footer-t 
+   {
+       margin-top: 2%;
+       color: rgb(146, 141, 141);
+       font-weight: 700;
+       display: flex;
+       justify-content: space-around;
+   }
 }
