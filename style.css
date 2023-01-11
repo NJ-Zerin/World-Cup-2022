@@ -1,8 +1,10 @@
+/* all section  */
 body 
 {
   font-family: "Josefin Sans", sans-serif;
   margin: 0px;
 }
+/* header styles  */
 #header_banner 
 {
   display: flex;
@@ -12,20 +14,28 @@ body
   margin-left: 7%;
   margin-right: 7%;
 }
+/* text-header styles  */
+span{
+  text-align: justify;
+}
+/* header-left-side styles  */
 #div_1 
 {
   margin: 5%;
   color: white;
 }
+/* header-rightt-side styles  */
 #div_2 
 {
   margin-top: 3%;
   margin-right: 2%;
 }
+/* header-right-side img styles  */
 #div_2 img 
 {
   height: 100%;
 }
+/* header-button styles  */
 #Watch-btn
 {
   padding-top: 1.5%;
@@ -37,6 +47,7 @@ body
   border-radius: 8px;
   color: white;
 }
+/* header-button hover styles  */
 #Watch-btn:hover{
     background-color: white;
     transform: scale(1.1);
@@ -45,6 +56,7 @@ body
     border-radius: 8px;
     font-weight: 700;
 }
+/* card styles  */
 .card_section
 {
     display: flex;
@@ -66,6 +78,7 @@ body
   box-shadow: 8px 8px 8px 8px rgba(241, 236, 236, 0.767);
   border-radius: 10px;
 }
+/* button styles  */
 .btn-card 
 {
   background: linear-gradient(to left, #093647 0%, black 100%);
@@ -132,6 +145,7 @@ h4
 {
   margin-left: 7%;
 }
+/* icon styles  */
 .fa-clock 
 {
   color: rgba(128, 128, 128, 0.741);
@@ -142,6 +156,7 @@ h4
   color: rgba(128, 128, 128, 0.741);
   margin-left: 7%;
 }
+/* footer styles  */
 footer 
 {
   background-color: black;
@@ -162,6 +177,7 @@ footer
   display: flex;
   justify-content: space-around;
 }
+/* icon styles  */
 .icons 
 {
     font-size: 20px;
@@ -174,7 +190,7 @@ footer
 {
     margin-left: 15px;
 }
-
+/* media quries for mobile  */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
 #header_banner 
@@ -234,7 +250,7 @@ footer
     justify-content: space-around;
 }
 }
-
+/* media quries for tablate  */
 @media only screen and (min-width: 600px) and (max-width: 1023px) 
 {
 #header_banner 

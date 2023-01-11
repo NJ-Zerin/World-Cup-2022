@@ -1,3 +1,4 @@
+/* all section  */
 body{
    font-family: 'Josefin Sans', sans-serif;
    margin: 0px;
@@ -5,6 +6,7 @@ body{
 .intro{
    color: white;
 }
+/* header styles  */
 #header_banner{
    display: flex;
    background: linear-gradient(to right, #093647 0%, black 100%);
@@ -13,17 +15,21 @@ body{
    margin-left: 7%;
    margin-right: 7%;
 }
+/* header-left-side styles  */
 #div_1{
    margin: 5%;
    color: white;
 }
+/* header-rightt-side styles  */
 #div_2{
    margin-top: 3%;
    margin-right: 2%;
 }
+/* header-right-side img styles  */
 #div_2 img{
    height: 100%;
 }
+/* header-button styles  */
 #Watch-btn{
    padding-top: 1.5%;
    padding-bottom: 1.5%;
@@ -34,6 +40,7 @@ body{
    border-radius: 8px;
    color: white;
 }
+/* header-button hover styles  */
 #Watch-btn:hover{
    background-color: white;
    transform: scale(1.1);
@@ -46,6 +53,7 @@ body{
 {
     display: none;
 }
+/* card styles  */
 .card_section
 {
     display: flex;
@@ -68,6 +76,7 @@ body{
    border-radius: 10px;
    text-align: center;
 }
+/* button styles  */
 .btn-card 
 {
   background: linear-gradient(to left, #093647 0%, black 100%);
@@ -109,7 +118,7 @@ p{
   background-color: #04562e;
   color: white;
 }
-
+/* footer styles  */
 footer{
    background-color: black;
    margin-top: 5%;
@@ -127,6 +136,7 @@ footer{
    display: flex;
    justify-content: space-around;
 }
+/* icon styles  */
 .icons 
 {
     font-size: 20px;
@@ -139,6 +149,7 @@ footer{
 {
     margin-left: 15px;
 }
+/* media quries for mobile  */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
    #header_banner 
@@ -198,7 +209,7 @@ footer{
        justify-content: space-around;
    }
    }
-   
+   /* media quries for tablate  */
    @media only screen and (min-width: 600px) and (max-width: 1023px) 
    {
    #header_banner 
